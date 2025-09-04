@@ -32,7 +32,7 @@ app.post('/login', async (req, res) => {
 });
 
 // Rota de cadastro de usuário
-app.post('/register', async (req, res) => {
+app.post('/signup', async (req, res) => {
   const { username, password } = req.body;
   const db = await openDb();  //
 
