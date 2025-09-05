@@ -1,12 +1,14 @@
 import jwt from 'jsonwebtoken';
+import dotenv from 'dotenv';
+dotenv.config();
 
-const SECRET_KEY = 'segredo123';
+const SECRET_KEY = process.env.SECRET_KEY;
 
 function verifyToken(req, res, next) {
   const authHeader = req.headers.authorization;
   if (!authHeader) return res.sendStatus(401);
 
-  const token = authHeader.split(' ')[1]; // Pega o token JWT que está depois do "Bearer " (Divide a string e depois pega a posição na string [1]).
+  const token = authHeader.split(' ')[1]; // Divide a string "Bearer <token>" em ["Bearer", "<token>"]. Pega só o token (posição 1).
 
   try {
     const decoded = jwt.verify(token, SECRET_KEY); // Verifica se o token é válido.
