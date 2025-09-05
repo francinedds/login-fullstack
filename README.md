@@ -1,7 +1,7 @@
 # Login Fullstack App
 
-Projeto de autenticação fullstack desenvolvido com **Next.js** no frontend e um backend API local via `fetch`. Inclui funcionalidades de **cadastro**, **login**, **"remember me" com localStorage**, e navegação protegida entre páginas.
-- Projeto desenvolvido com foco em aprender sobre autenticação de usuários, integração com backend e uso avançado do framework Next.js.
+Projeto de autenticação fullstack desenvolvido com **Next.js** no frontend e um backend API local via `fetch`. Inclui funcionalidades de **cadastro**, **login** e **"remember me" com localStorage**.
+- Projeto desenvolvido com foco em aprender sobre autenticação de usuários, integração com backend e uso do framework Next.js.
 
 ---
 
@@ -86,3 +86,4 @@ O backend será iniciado em http://localhost:4000
     http://localhost:3000
 
 O frontend se comunica com o backend via http://localhost:4000. Certifique-se de que o **backend esteja rodando** antes de fazer login ou cadastro.
+
