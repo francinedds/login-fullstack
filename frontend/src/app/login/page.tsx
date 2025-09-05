@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 import { User, Lock } from 'phosphor-react'
@@ -12,7 +12,7 @@ export default function LoginPage(){
     const [rememberMe, setRememberMe] = useState(false);
     const router = useRouter();
     
-    async function handleLogin(e) {
+    async function handleLogin(e: FormEvent) {
     e.preventDefault();
         const res = await fetch('http://localhost:4000/login', {
         method: 'POST',

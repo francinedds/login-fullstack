@@ -4,8 +4,13 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { getToken, logout, parseJwt } from '@/lib/auth'; 
 
+type FormData = {
+  username: string;
+  password: string;
+};
+
 export default function Dashboard(){
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState<FormData | null>(null);
     const router = useRouter();
 
     // Pega o token de autenticação
