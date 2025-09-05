@@ -1,15 +1,5 @@
-'use client';
-import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-
-import '@/styles/globals.css'
+import { redirect } from 'next/navigation';
 
 export default function Home() {
-  const router = useRouter();
-  
-  useEffect(() => {
-    router.push('/signup');
-  }, []);
-  
-  return null;
+  redirect('/signup'); // Redireciona imediatamente do lado do servidor (estava usando useEffect antes, causou erro).
 }
