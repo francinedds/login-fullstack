@@ -55,7 +55,7 @@ export default function SignUp(){
                 <p className="text-white text-center text-sm mb-10">Please sign up to continue.</p>
 
                 <form onSubmit={handleSubmit} className="flex flex-col items-center">
-                    <div className="mb-4 relative w-[400px]">
+                    <div className="mb-4 relative w-[350px]">
                     <input
                         className="w-full px-4 py-2 rounded-2xl bg-transparent border border-[#ee3a57] focus:outline-none text-white text-sm"
                         type="text"
@@ -65,7 +65,7 @@ export default function SignUp(){
                         required
                     />
                     </div>
-                    <div className="mb-4 relative w-[400px]">
+                    <div className="mb-4 relative w-[350px]">
                     <input
                         className="w-full px-4 py-2 rounded-2xl bg-transparent border border-[#ee3a57] focus:outline-none text-white text-sm"
                         type="password"
@@ -76,7 +76,7 @@ export default function SignUp(){
                     />
                     </div>
 
-                    <button className="w-[400px] mb-2 bg-[#ee3a57] hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded-xl transition cursor-pointer" type="submit">Sign up</button>
+                    <button className="w-[350px] mb-2 bg-[#ee3a57] hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded-xl transition cursor-pointer" type="submit">Sign up</button>
                     <p className="text-sm text-white text-center mt-4">
                         Already have an account?{' '}
                         <Link href="/login">

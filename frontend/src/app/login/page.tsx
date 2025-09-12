@@ -58,7 +58,7 @@ export default function LoginPage(){
               <p className="text-white text-center text-sm mb-10">Log in with your account.</p>
       
               {/* Username */}
-              <div className="mb-4 relative w-[400px]">
+              <div className="mb-4 relative w-[350px]">
                 <User
                   size={20}
                   weight="bold"
@@ -74,7 +74,7 @@ export default function LoginPage(){
               </div>
       
               {/* Password */}
-              <div className="mb-4 relative w-[400px]">
+              <div className="mb-4 relative w-[350px]">
                 <Lock
                   size={20}
                   weight="bold"
@@ -91,7 +91,7 @@ export default function LoginPage(){
               </div>
               
               {/* Checkbox */}
-              <div className="mb-6 flex justify-start w-[390px]">
+              <div className="mb-6 flex justify-start w-[340px]">
                 <label className="relative flex items-center cursor-pointer text-sm text-white">
                   <input
                     type="checkbox"
@@ -114,7 +114,7 @@ export default function LoginPage(){
                 </label>
               </div>
 
-              <button type="submit" className="w-[400px] bg-[#ee3a57] hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded-xl transition cursor-pointer">Enter</button>
+              <button type="submit" className="w-[350px] bg-[#ee3a57] hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded-xl transition cursor-pointer">Enter</button>
             </form>
           </div>
         </div>
